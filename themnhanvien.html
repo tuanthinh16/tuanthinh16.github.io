@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Nhân Viên</title>
+    <link rel="stylesheet" href="./themnhanvien.css">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h1>THÊM MỚI NHÂN VIÊN</h1>
+        <hr size="5px" style="background-color: brown;">
+        <div style="background-color: rgba(185, 194, 108, 0.945);">
+            <form action="themnhanvien.php" method="POST" >
+                <table>
+                    <tr>
+                        <td>Mã nhân viên</td>
+                        <td colspan="2">
+                            <input type="text" name="id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Họ tên</td>
+                        <td colspan="2"> 
+                            <input type="text" name="user">
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>Giới tính</td>
+                        <td colspan="2">
+                            Nam<input type="radio" name="gt" id="nam">Nữ <input type="radio" name="gt" id="nu">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ngày Sinh</td>
+                        <td colspan="2">
+                            <input type="date" name="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Địa chỉ</td>
+                        <td colspan="2">
+                            <input type="text" name="place">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hình ảnh</td>
+                        <td colspan="2">
+                            <input type="file" name="picture">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hệ số lương</td>
+                        <td colspan="2">
+                            <input type="text" name="sallary">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phòng ban</td>
+                        <td colspan="2">
+                            <select name="vitri" id="phongban">
+                                <option value="manager">Quản Lý</option>
+                                <option value="tapvu">Tạp Vụ</option>
+                                <option value="boss">Trưởng Phòng</option>
+                                <option value="nv">Nhân Viên</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="add" value="Thêm Nhân Viên">
+                        </td>
+                        <td>
+                            <button type="reset"> Nhập lại</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <label>
+                                Vui lòng kiểm tra kĩ thông tin
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</center>
+</body>
+</html>
