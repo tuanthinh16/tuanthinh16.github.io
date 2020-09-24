@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(isset($_POST['add'])){
         $id = $_POST['id'];
         $user = $_POST['user'];
@@ -25,6 +26,7 @@
             echo("<br>".$info);
         }
     }
+}
     ?>
 </body>
 </html>
